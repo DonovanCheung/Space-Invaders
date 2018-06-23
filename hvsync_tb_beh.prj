@@ -1,0 +1,3 @@
+verilog work "hvsync_generator.v"
+verilog work "hvsync_generator_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

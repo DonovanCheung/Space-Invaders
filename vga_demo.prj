@@ -1,0 +1,3 @@
+verilog work "hvsync_generator.v"
+verilog work "ee354_spinvader_sm.v"
+verilog work "vga_demo.v"

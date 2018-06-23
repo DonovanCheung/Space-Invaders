@@ -1,0 +1,1091 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: vga_demo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vga_demo.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vga_demo"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : vga_demo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Donovan\Downloads\VGA manual\vga_demo\hvsync_generator.v" into library work
+Parsing module <hvsync_generator>.
+Analyzing Verilog file "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" into library work
+Parsing module <ee354_spinvaders_sm>.
+Analyzing Verilog file "C:\Users\Donovan\Downloads\VGA manual\vga_demo\vga_demo.v" into library work
+Parsing module <vga_demo>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <vga_demo>.
+
+Elaborating module <BUF>.
+WARNING:HDLCompiler:1127 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\vga_demo.v" Line 36: Assignment to button_clk ignored, since the identifier is never used
+
+Elaborating module <hvsync_generator>.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\hvsync_generator.v" Line 34: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\hvsync_generator.v" Line 44: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <ee354_spinvaders_sm>.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 48: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 50: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 67: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 69: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 76: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 83: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 90: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 97: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 104: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 111: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 118: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 125: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 132: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 139: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 146: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 153: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 160: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 167: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 177: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 188: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 189: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 190: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 194: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 195: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 196: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 197: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 198: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 200: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 201: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 202: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 203: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 204: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 206: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 207: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 208: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 209: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 210: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 212: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 221: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 222: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 223: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 227: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 228: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 229: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 230: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 231: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 232: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 234: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 235: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 236: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 237: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 238: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 240: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 241: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 242: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 243: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 244: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 298: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 305: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 312: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 319: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 326: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 329: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 338: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 345: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 352: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 359: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 366: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 369: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 378: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 385: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 392: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 399: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 406: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 409: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v" Line 413: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:634 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\vga_demo.v" Line 112: Net <p2_score[3]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\vga_demo.v" Line 113: Net <p1_score[3]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Donovan\Downloads\VGA manual\vga_demo\vga_demo.v" Line 114: Net <state[1]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <vga_demo>.
+    Related source file is "C:\Users\Donovan\Downloads\VGA manual\vga_demo\vga_demo.v".
+WARNING:Xst:653 - Signal <p2_score> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <p1_score> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <state> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 28-bit register for signal <DIV_CLK>.
+    Found 1-bit register for signal <vga_r>.
+    Found 1-bit register for signal <vga_g>.
+    Found 1-bit register for signal <vga_b>.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_4_OUT> created at line 69.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_10_OUT> created at line 69.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_12_OUT> created at line 70.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_20_OUT> created at line 71.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_28_OUT> created at line 72.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_36_OUT> created at line 73.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_44_OUT> created at line 74.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_50_OUT> created at line 74.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_52_OUT> created at line 75.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_60_OUT> created at line 76.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_68_OUT> created at line 77.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_76_OUT> created at line 78.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_84_OUT> created at line 79.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_90_OUT> created at line 79.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_92_OUT> created at line 80.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_100_OUT> created at line 81.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_108_OUT> created at line 82.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_116_OUT> created at line 83.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_124_OUT> created at line 84.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_130_OUT> created at line 85.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_136_OUT> created at line 85.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_138_OUT> created at line 86.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_144_OUT> created at line 86.
+    Found 28-bit adder for signal <DIV_CLK[27]_GND_1_o_add_0_OUT> created at line 33.
+    Found 11-bit adder for signal <n0330> created at line 69.
+    Found 11-bit adder for signal <n0332> created at line 69.
+    Found 11-bit adder for signal <n0340> created at line 70.
+    Found 11-bit adder for signal <n0345> created at line 71.
+    Found 11-bit adder for signal <n0350> created at line 72.
+    Found 11-bit adder for signal <n0355> created at line 73.
+    Found 11-bit adder for signal <n0360> created at line 74.
+    Found 11-bit adder for signal <n0362> created at line 74.
+    Found 11-bit adder for signal <n0370> created at line 75.
+    Found 11-bit adder for signal <n0375> created at line 76.
+    Found 11-bit adder for signal <n0380> created at line 77.
+    Found 11-bit adder for signal <n0385> created at line 78.
+    Found 11-bit adder for signal <n0390> created at line 79.
+    Found 11-bit adder for signal <n0392> created at line 79.
+    Found 11-bit adder for signal <n0400> created at line 80.
+    Found 11-bit adder for signal <n0405> created at line 81.
+    Found 11-bit adder for signal <n0410> created at line 82.
+    Found 11-bit adder for signal <n0415> created at line 83.
+    Found 11-bit adder for signal <n0420> created at line 84.
+    Found 11-bit adder for signal <n0425> created at line 85.
+    Found 11-bit adder for signal <n0427> created at line 85.
+    Found 11-bit adder for signal <n0435> created at line 86.
+    Found 11-bit adder for signal <n0437> created at line 86.
+    Found 16x7-bit Read Only RAM for signal <SSD_CATHODES>
+    Found 32-bit comparator lessequal for signal <n0005> created at line 69
+    Found 11-bit comparator lessequal for signal <n0008> created at line 69
+    Found 11-bit comparator lessequal for signal <n0012> created at line 69
+    Found 32-bit comparator lessequal for signal <n0016> created at line 69
+    Found 32-bit comparator lessequal for signal <n0020> created at line 70
+    Found 11-bit comparator lessequal for signal <n0023> created at line 70
+    Found 32-bit comparator lessequal for signal <n0030> created at line 71
+    Found 11-bit comparator lessequal for signal <n0033> created at line 71
+    Found 32-bit comparator lessequal for signal <n0040> created at line 72
+    Found 11-bit comparator lessequal for signal <n0043> created at line 72
+    Found 32-bit comparator lessequal for signal <n0050> created at line 73
+    Found 11-bit comparator lessequal for signal <n0053> created at line 73
+    Found 32-bit comparator lessequal for signal <n0060> created at line 74
+    Found 11-bit comparator lessequal for signal <n0063> created at line 74
+    Found 11-bit comparator lessequal for signal <n0067> created at line 74
+    Found 32-bit comparator lessequal for signal <n0071> created at line 74
+    Found 32-bit comparator lessequal for signal <n0076> created at line 75
+    Found 11-bit comparator lessequal for signal <n0079> created at line 75
+    Found 32-bit comparator lessequal for signal <n0086> created at line 76
+    Found 11-bit comparator lessequal for signal <n0089> created at line 76
+    Found 32-bit comparator lessequal for signal <n0096> created at line 77
+    Found 11-bit comparator lessequal for signal <n0099> created at line 77
+    Found 32-bit comparator lessequal for signal <n0106> created at line 78
+    Found 11-bit comparator lessequal for signal <n0109> created at line 78
+    Found 32-bit comparator lessequal for signal <n0116> created at line 79
+    Found 11-bit comparator lessequal for signal <n0119> created at line 79
+    Found 11-bit comparator lessequal for signal <n0123> created at line 79
+    Found 32-bit comparator lessequal for signal <n0127> created at line 79
+    Found 32-bit comparator lessequal for signal <n0132> created at line 80
+    Found 11-bit comparator lessequal for signal <n0135> created at line 80
+    Found 32-bit comparator lessequal for signal <n0142> created at line 81
+    Found 11-bit comparator lessequal for signal <n0145> created at line 81
+    Found 32-bit comparator lessequal for signal <n0152> created at line 82
+    Found 11-bit comparator lessequal for signal <n0155> created at line 82
+    Found 32-bit comparator lessequal for signal <n0162> created at line 83
+    Found 11-bit comparator lessequal for signal <n0165> created at line 83
+    Found 32-bit comparator lessequal for signal <n0172> created at line 84
+    Found 11-bit comparator lessequal for signal <n0175> created at line 84
+    Found 10-bit comparator lessequal for signal <n0178> created at line 84
+    Found 10-bit comparator lessequal for signal <n0181> created at line 84
+    Found 32-bit comparator lessequal for signal <n0185> created at line 85
+    Found 11-bit comparator lessequal for signal <n0188> created at line 85
+    Found 11-bit comparator lessequal for signal <n0192> created at line 85
+    Found 32-bit comparator lessequal for signal <n0196> created at line 85
+    Found 32-bit comparator lessequal for signal <n0200> created at line 86
+    Found 11-bit comparator lessequal for signal <n0203> created at line 86
+    Found 11-bit comparator lessequal for signal <n0207> created at line 86
+    Found 32-bit comparator lessequal for signal <n0211> created at line 86
+    Summary:
+	inferred   1 RAM(s).
+	inferred  47 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+	inferred  48 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <vga_demo> synthesized.
+
+Synthesizing Unit <hvsync_generator>.
+    Related source file is "C:\Users\Donovan\Downloads\VGA manual\vga_demo\hvsync_generator.v".
+    Found 10-bit register for signal <CounterY>.
+    Found 1-bit register for signal <vga_HS>.
+    Found 1-bit register for signal <vga_VS>.
+    Found 1-bit register for signal <inDisplayArea>.
+    Found 10-bit register for signal <CounterX>.
+    Found 10-bit adder for signal <CounterX[9]_GND_3_o_add_2_OUT> created at line 34.
+    Found 10-bit adder for signal <CounterY[9]_GND_3_o_add_9_OUT> created at line 44.
+    Found 10-bit comparator greater for signal <PWR_3_o_CounterX[9]_LessThan_16_o> created at line 49
+    Found 10-bit comparator greater for signal <CounterX[9]_PWR_3_o_LessThan_17_o> created at line 49
+    Found 10-bit comparator greater for signal <CounterX[9]_PWR_3_o_LessThan_21_o> created at line 58
+    Found 10-bit comparator greater for signal <CounterY[9]_GND_3_o_LessThan_22_o> created at line 58
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <hvsync_generator> synthesized.
+
+Synthesizing Unit <ee354_spinvaders_sm>.
+    Related source file is "C:\Users\Donovan\Downloads\VGA manual\vga_demo\ee354_spinvader_sm.v".
+    Found 4-bit register for signal <alienSel>.
+    Found 10-bit register for signal <returnX>.
+    Found 10-bit register for signal <returnY>.
+    Found 4-bit register for signal <direction>.
+    Found 10-bit register for signal <topY>.
+    Found 10-bit register for signal <midY>.
+    Found 10-bit register for signal <botY>.
+    Found 10-bit register for signal <alien1X>.
+    Found 10-bit register for signal <alien2X>.
+    Found 10-bit register for signal <alien3X>.
+    Found 10-bit register for signal <alien4X>.
+    Found 10-bit register for signal <alien5X>.
+    Found 10-bit register for signal <alien6X>.
+    Found 10-bit register for signal <alien7X>.
+    Found 10-bit register for signal <alien8X>.
+    Found 10-bit register for signal <alien9X>.
+    Found 10-bit register for signal <alien10X>.
+    Found 10-bit register for signal <alien11X>.
+    Found 10-bit register for signal <alien12X>.
+    Found 10-bit register for signal <alien13X>.
+    Found 10-bit register for signal <alien14X>.
+    Found 10-bit register for signal <alien15X>.
+    Found 10-bit register for signal <base>.
+    Found 10-bit register for signal <projectileX>.
+    Found 10-bit register for signal <projectileY>.
+    Found 4-bit register for signal <score>.
+    Found 10-bit register for signal <position>.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_5_OUT> created at line 39.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_215_OUT> created at line 291.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_219_OUT> created at line 293.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_224_OUT> created at line 300.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_229_OUT> created at line 307.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_234_OUT> created at line 314.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_239_OUT> created at line 321.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_275_OUT> created at line 331.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_279_OUT> created at line 333.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_284_OUT> created at line 340.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_289_OUT> created at line 347.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_294_OUT> created at line 354.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_299_OUT> created at line 361.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_335_OUT> created at line 371.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_339_OUT> created at line 373.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_344_OUT> created at line 380.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_349_OUT> created at line 387.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_354_OUT> created at line 394.
+    Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_359_OUT> created at line 401.
+    Found 11-bit adder for signal <n0959> created at line 39.
+    Found 10-bit adder for signal <position[9]_GND_4_o_add_9_OUT> created at line 48.
+    Found 4-bit adder for signal <alienSel[3]_GND_4_o_add_89_OUT> created at line 167.
+    Found 10-bit adder for signal <returnY[9]_GND_4_o_add_96_OUT> created at line 177.
+    Found 10-bit adder for signal <alien1X[9]_GND_4_o_add_112_OUT> created at line 194.
+    Found 10-bit adder for signal <alien2X[9]_GND_4_o_add_113_OUT> created at line 195.
+    Found 10-bit adder for signal <alien3X[9]_GND_4_o_add_114_OUT> created at line 196.
+    Found 10-bit adder for signal <alien4X[9]_GND_4_o_add_115_OUT> created at line 197.
+    Found 10-bit adder for signal <alien5X[9]_GND_4_o_add_116_OUT> created at line 198.
+    Found 10-bit adder for signal <alien6X[9]_GND_4_o_add_117_OUT> created at line 200.
+    Found 10-bit adder for signal <alien7X[9]_GND_4_o_add_118_OUT> created at line 201.
+    Found 10-bit adder for signal <alien8X[9]_GND_4_o_add_119_OUT> created at line 202.
+    Found 10-bit adder for signal <alien9X[9]_GND_4_o_add_120_OUT> created at line 203.
+    Found 10-bit adder for signal <alien10X[9]_GND_4_o_add_121_OUT> created at line 204.
+    Found 10-bit adder for signal <alien11X[9]_GND_4_o_add_122_OUT> created at line 206.
+    Found 10-bit adder for signal <alien12X[9]_GND_4_o_add_123_OUT> created at line 207.
+    Found 10-bit adder for signal <alien13X[9]_GND_4_o_add_124_OUT> created at line 208.
+    Found 10-bit adder for signal <alien14X[9]_GND_4_o_add_125_OUT> created at line 209.
+    Found 10-bit adder for signal <alien15X[9]_GND_4_o_add_126_OUT> created at line 210.
+    Found 10-bit adder for signal <base[9]_GND_4_o_add_127_OUT> created at line 212.
+    Found 10-bit adder for signal <topY[9]_GND_4_o_add_149_OUT> created at line 221.
+    Found 10-bit adder for signal <midY[9]_GND_4_o_add_150_OUT> created at line 222.
+    Found 10-bit adder for signal <botY[9]_GND_4_o_add_151_OUT> created at line 223.
+    Found 11-bit adder for signal <n0995> created at line 291.
+    Found 11-bit adder for signal <n1000> created at line 293.
+    Found 11-bit adder for signal <n1005> created at line 300.
+    Found 11-bit adder for signal <n1010> created at line 307.
+    Found 11-bit adder for signal <n1015> created at line 314.
+    Found 11-bit adder for signal <n1020> created at line 321.
+    Found 11-bit adder for signal <n1025> created at line 331.
+    Found 11-bit adder for signal <n1030> created at line 333.
+    Found 11-bit adder for signal <n1035> created at line 340.
+    Found 11-bit adder for signal <n1040> created at line 347.
+    Found 11-bit adder for signal <n1045> created at line 354.
+    Found 11-bit adder for signal <n1050> created at line 361.
+    Found 11-bit adder for signal <n1055> created at line 371.
+    Found 11-bit adder for signal <n1060> created at line 373.
+    Found 11-bit adder for signal <n1065> created at line 380.
+    Found 11-bit adder for signal <n1070> created at line 387.
+    Found 11-bit adder for signal <n1075> created at line 394.
+    Found 11-bit adder for signal <n1080> created at line 401.
+    Found 4-bit adder for signal <score[3]_GND_4_o_add_360_OUT> created at line 406.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_11_OUT<9:0>> created at line 50.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_153_OUT<9:0>> created at line 227.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_154_OUT<9:0>> created at line 228.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_155_OUT<9:0>> created at line 229.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_156_OUT<9:0>> created at line 230.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_157_OUT<9:0>> created at line 231.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_158_OUT<9:0>> created at line 232.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_159_OUT<9:0>> created at line 234.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_160_OUT<9:0>> created at line 235.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_161_OUT<9:0>> created at line 236.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_162_OUT<9:0>> created at line 237.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_163_OUT<9:0>> created at line 238.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_164_OUT<9:0>> created at line 240.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_165_OUT<9:0>> created at line 241.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_166_OUT<9:0>> created at line 242.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_167_OUT<9:0>> created at line 243.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_168_OUT<9:0>> created at line 244.
+    Found 10-bit subtractor for signal <GND_4_o_GND_4_o_sub_393_OUT<9:0>> created at line 413.
+    Found 4-bit 16-to-1 multiplexer for signal <alienSel[3]_alienSel[3]_wide_mux_93_OUT> created at line 66.
+    Found 10-bit comparator greater for signal <GND_4_o_botY[9]_LessThan_2_o> created at line 39
+    Found 10-bit comparator greater for signal <GND_4_o_returnY[9]_LessThan_3_o> created at line 39
+    Found 10-bit comparator greater for signal <returnY[9]_GND_4_o_LessThan_4_o> created at line 39
+    Found 32-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_6_o> created at line 39
+    Found 11-bit comparator greater for signal <GND_4_o_BUS_0001_LessThan_8_o> created at line 39
+    Found 10-bit comparator greater for signal <n0023> created at line 64
+    Found 10-bit comparator greater for signal <GND_4_o_base[9]_LessThan_109_o> created at line 185
+    Found 11-bit comparator lessequal for signal <n0203> created at line 291
+    Found 32-bit comparator lessequal for signal <n0206> created at line 291
+    Found 11-bit comparator lessequal for signal <n0210> created at line 293
+    Found 32-bit comparator lessequal for signal <n0213> created at line 293
+    Found 11-bit comparator lessequal for signal <n0217> created at line 300
+    Found 32-bit comparator lessequal for signal <n0220> created at line 300
+    Found 11-bit comparator lessequal for signal <n0224> created at line 307
+    Found 32-bit comparator lessequal for signal <n0227> created at line 307
+    Found 11-bit comparator lessequal for signal <n0231> created at line 314
+    Found 32-bit comparator lessequal for signal <n0234> created at line 314
+    Found 11-bit comparator lessequal for signal <n0238> created at line 321
+    Found 32-bit comparator lessequal for signal <n0241> created at line 321
+    Found 11-bit comparator lessequal for signal <n0275> created at line 331
+    Found 32-bit comparator lessequal for signal <n0278> created at line 331
+    Found 11-bit comparator lessequal for signal <n0282> created at line 333
+    Found 32-bit comparator lessequal for signal <n0285> created at line 333
+    Found 11-bit comparator lessequal for signal <n0289> created at line 340
+    Found 32-bit comparator lessequal for signal <n0292> created at line 340
+    Found 11-bit comparator lessequal for signal <n0296> created at line 347
+    Found 32-bit comparator lessequal for signal <n0299> created at line 347
+    Found 11-bit comparator lessequal for signal <n0303> created at line 354
+    Found 32-bit comparator lessequal for signal <n0306> created at line 354
+    Found 11-bit comparator lessequal for signal <n0310> created at line 361
+    Found 32-bit comparator lessequal for signal <n0313> created at line 361
+    Found 11-bit comparator lessequal for signal <n0347> created at line 371
+    Found 32-bit comparator lessequal for signal <n0350> created at line 371
+    Found 11-bit comparator lessequal for signal <n0354> created at line 373
+    Found 32-bit comparator lessequal for signal <n0357> created at line 373
+    Found 11-bit comparator lessequal for signal <n0361> created at line 380
+    Found 32-bit comparator lessequal for signal <n0364> created at line 380
+    Found 11-bit comparator lessequal for signal <n0368> created at line 387
+    Found 32-bit comparator lessequal for signal <n0371> created at line 387
+    Found 11-bit comparator lessequal for signal <n0375> created at line 394
+    Found 32-bit comparator lessequal for signal <n0378> created at line 394
+    Found 11-bit comparator lessequal for signal <n0382> created at line 401
+    Found 32-bit comparator lessequal for signal <n0385> created at line 401
+    Summary:
+	inferred  77 Adder/Subtractor(s).
+	inferred 252 D-type flip-flop(s).
+	inferred  43 Comparator(s).
+	inferred 267 Multiplexer(s).
+Unit <ee354_spinvaders_sm> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 126
+ 10-bit adder                                          : 21
+ 10-bit addsub                                         : 2
+ 10-bit subtractor                                     : 16
+ 11-bit adder                                          : 42
+ 11-bit subtractor                                     : 42
+ 28-bit adder                                          : 1
+ 4-bit adder                                           : 2
+# Registers                                            : 36
+ 1-bit register                                        : 6
+ 10-bit register                                       : 26
+ 28-bit register                                       : 1
+ 4-bit register                                        : 3
+# Comparators                                          : 95
+ 10-bit comparator greater                             : 9
+ 10-bit comparator lessequal                           : 2
+ 11-bit comparator greater                             : 1
+ 11-bit comparator lessequal                           : 41
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 41
+# Multiplexers                                         : 271
+ 1-bit 2-to-1 multiplexer                              : 4
+ 10-bit 2-to-1 multiplexer                             : 251
+ 4-bit 16-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 15
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <direction_1> (without init value) has a constant value of 0 in block <Invaders>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <direction_2> (without init value) has a constant value of 0 in block <Invaders>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <direction_3> (without init value) has a constant value of 0 in block <Invaders>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <ee354_spinvaders_sm>.
+The following registers are absorbed into counter <base>: 1 register on signal <base>.
+The following registers are absorbed into counter <score>: 1 register on signal <score>.
+The following registers are absorbed into accumulator <topY>: 1 register on signal <topY>.
+The following registers are absorbed into accumulator <midY>: 1 register on signal <midY>.
+The following registers are absorbed into accumulator <botY>: 1 register on signal <botY>.
+The following registers are absorbed into accumulator <position>: 1 register on signal <position>.
+Unit <ee354_spinvaders_sm> synthesized (advanced).
+
+Synthesizing (advanced) Unit <hvsync_generator>.
+The following registers are absorbed into counter <CounterX>: 1 register on signal <CounterX>.
+The following registers are absorbed into counter <CounterY>: 1 register on signal <CounterY>.
+Unit <hvsync_generator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_demo>.
+The following registers are absorbed into counter <DIV_CLK>: 1 register on signal <DIV_CLK>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_SSD_CATHODES> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <SSD>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Cg>            |          |
+    -----------------------------------------------------------------------
+Unit <vga_demo> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 117
+ 10-bit adder                                          : 16
+ 10-bit subtractor                                     : 16
+ 11-bit adder                                          : 42
+ 11-bit subtractor                                     : 42
+ 4-bit adder                                           : 1
+# Counters                                             : 5
+ 10-bit up counter                                     : 2
+ 10-bit updown counter                                 : 1
+ 28-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Accumulators                                         : 4
+ 10-bit up accumulator                                 : 3
+ 10-bit updown accumulator                             : 1
+# Registers                                            : 204
+ Flip-Flops                                            : 204
+# Comparators                                          : 95
+ 10-bit comparator greater                             : 9
+ 10-bit comparator lessequal                           : 2
+ 11-bit comparator greater                             : 1
+ 11-bit comparator lessequal                           : 41
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 41
+# Multiplexers                                         : 271
+ 1-bit 2-to-1 multiplexer                              : 4
+ 10-bit 2-to-1 multiplexer                             : 251
+ 4-bit 16-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 15
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <direction_1> (without init value) has a constant value of 0 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <direction_2> (without init value) has a constant value of 0 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <direction_3> (without init value) has a constant value of 0 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <alien6X_0> (without init value) has a constant value of 0 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alienSel_0> (without init value) has a constant value of 1 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alien7X_0> (without init value) has a constant value of 0 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <DIV_CLK_22> of sequential type is unconnected in block <vga_demo>.
+WARNING:Xst:2677 - Node <DIV_CLK_23> of sequential type is unconnected in block <vga_demo>.
+WARNING:Xst:2677 - Node <DIV_CLK_24> of sequential type is unconnected in block <vga_demo>.
+WARNING:Xst:2677 - Node <DIV_CLK_25> of sequential type is unconnected in block <vga_demo>.
+WARNING:Xst:2677 - Node <DIV_CLK_26> of sequential type is unconnected in block <vga_demo>.
+WARNING:Xst:2677 - Node <DIV_CLK_27> of sequential type is unconnected in block <vga_demo>.
+
+Optimizing unit <vga_demo> ...
+
+Optimizing unit <ee354_spinvaders_sm> ...
+WARNING:Xst:1710 - FF/Latch <alien8X_0> (without init value) has a constant value of 0 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alien9X_0> (without init value) has a constant value of 0 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alien10X_0> (without init value) has a constant value of 0 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <projectileY_0> (without init value) has a constant value of 0 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <alien8X_0> (without init value) has a constant value of 0 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alien9X_0> (without init value) has a constant value of 0 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alien10X_0> (without init value) has a constant value of 0 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <projectileY_0> (without init value) has a constant value of 0 in block <ee354_spinvaders_sm>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <hvsync_generator> ...
+WARNING:Xst:1710 - FF/Latch <Invaders/base_9> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Invaders/base_8> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Invaders/base_7> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Invaders/base_6> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Invaders/base_5> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Invaders/botY_9> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <Invaders/botY_0> in Unit <vga_demo> is equivalent to the following 2 FFs/Latches, which will be removed : <Invaders/midY_0> <Invaders/topY_0> 
+INFO:Xst:2261 - The FF/Latch <Invaders/botY_1> in Unit <vga_demo> is equivalent to the following FF/Latch, which will be removed : <Invaders/topY_1> 
+INFO:Xst:3203 - The FF/Latch <Invaders/botY_1> in Unit <vga_demo> is the opposite to the following FF/Latch, which will be removed : <Invaders/midY_1> 
+INFO:Xst:3203 - The FF/Latch <Invaders/botY_2> in Unit <vga_demo> is the opposite to the following FF/Latch, which will be removed : <Invaders/topY_2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vga_demo, actual ratio is 26.
+FlipFlop Invaders/alien10X_2 has been replicated 1 time(s)
+FlipFlop Invaders/alien12X_2 has been replicated 1 time(s)
+FlipFlop Invaders/alien12X_3 has been replicated 1 time(s)
+FlipFlop Invaders/alien13X_2 has been replicated 1 time(s)
+FlipFlop Invaders/alien13X_3 has been replicated 1 time(s)
+FlipFlop Invaders/alien14X_2 has been replicated 1 time(s)
+FlipFlop Invaders/alien1X_2 has been replicated 1 time(s)
+FlipFlop Invaders/alien1X_3 has been replicated 1 time(s)
+FlipFlop Invaders/alien2X_2 has been replicated 1 time(s)
+FlipFlop Invaders/alien3X_2 has been replicated 1 time(s)
+FlipFlop Invaders/alien3X_3 has been replicated 1 time(s)
+FlipFlop Invaders/alien6X_2 has been replicated 1 time(s)
+FlipFlop Invaders/alien7X_2 has been replicated 1 time(s)
+FlipFlop Invaders/alien7X_3 has been replicated 1 time(s)
+FlipFlop Invaders/alien8X_2 has been replicated 1 time(s)
+FlipFlop Invaders/alien8X_3 has been replicated 1 time(s)
+FlipFlop Invaders/alien9X_2 has been replicated 2 time(s)
+FlipFlop Invaders/alien9X_3 has been replicated 1 time(s)
+FlipFlop Invaders/botY_1 has been replicated 3 time(s)
+FlipFlop Invaders/botY_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 302
+ Flip-Flops                                            : 302
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : vga_demo.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2340
+#      BUF                         : 3
+#      GND                         : 1
+#      INV                         : 31
+#      LUT1                        : 39
+#      LUT2                        : 137
+#      LUT3                        : 159
+#      LUT4                        : 802
+#      LUT5                        : 245
+#      LUT6                        : 425
+#      MUXCY                       : 406
+#      MUXF7                       : 31
+#      MUXF8                       : 13
+#      VCC                         : 1
+#      XORCY                       : 47
+# FlipFlops/Latches                : 302
+#      FD                          : 6
+#      FDC                         : 22
+#      FDR                         : 49
+#      FDRE                        : 114
+#      FDS                         : 32
+#      FDSE                        : 79
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 35
+#      IBUF                        : 5
+#      OBUF                        : 30
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             302  out of  18224     1%  
+ Number of Slice LUTs:                 1838  out of   9112    20%  
+    Number used as Logic:              1838  out of   9112    20%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1893
+   Number with an unused Flip Flop:    1591  out of   1893    84%  
+   Number with an unused LUT:            55  out of   1893     2%  
+   Number of fully used LUT-FF pairs:   247  out of   1893    13%  
+   Number of unique control sets:        39
+
+IO Utilization: 
+ Number of IOs:                          36
+ Number of bonded IOBs:                  36  out of    232    15%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+DIV_CLK_1                          | BUFG                   | 26    |
+ClkPort                            | BUFGP                  | 22    |
+DIV_CLK_21                         | BUFG                   | 254   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 8.834ns (Maximum Frequency: 113.197MHz)
+   Minimum input arrival time before clock: 8.200ns
+   Maximum output required time after clock: 5.073ns
+   Maximum combinational path delay: 6.487ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DIV_CLK_1'
+  Clock period: 7.260ns (frequency: 137.750MHz)
+  Total number of paths / destination ports: 1388 / 60
+-------------------------------------------------------------------------
+Delay:               7.260ns (Levels of Logic = 9)
+  Source:            syncgen/CounterX_0 (FF)
+  Destination:       vga_b (FF)
+  Source Clock:      DIV_CLK_1 rising
+  Destination Clock: DIV_CLK_1 rising
+
+  Data Path: syncgen/CounterX_0 to vga_b
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             74   0.447   1.934  syncgen/CounterX_0 (syncgen/CounterX_0)
+     LUT4:I1->O            1   0.205   0.000  Mcompar_GND_1_o_GND_1_o_LessThan_131_o_lut<0> (Mcompar_GND_1_o_GND_1_o_LessThan_131_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_GND_1_o_GND_1_o_LessThan_131_o_cy<0> (Mcompar_GND_1_o_GND_1_o_LessThan_131_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_1_o_GND_1_o_LessThan_131_o_cy<1> (Mcompar_GND_1_o_GND_1_o_LessThan_131_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_1_o_GND_1_o_LessThan_131_o_cy<2> (Mcompar_GND_1_o_GND_1_o_LessThan_131_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  Mcompar_GND_1_o_GND_1_o_LessThan_131_o_cy<3> (Mcompar_GND_1_o_GND_1_o_LessThan_131_o_cy<3>)
+     LUT5:I4->O            1   0.205   0.580  Mcompar_GND_1_o_GND_1_o_LessThan_131_o_cy<4>_SW0 (N265)
+     LUT6:I5->O            1   0.205   0.684  Mcompar_GND_1_o_GND_1_o_LessThan_131_o_cy<4> (GND_1_o_GND_1_o_LessThan_131_o)
+     LUT3:I1->O            1   0.203   0.580  B_inv_SW0 (N49)
+     LUT6:I5->O            1   0.205   0.579  B_inv (B_inv)
+     FDR:R                     0.430          vga_b
+    ----------------------------------------
+    Total                      7.260ns (2.323ns logic, 4.937ns route)
+                                       (32.0% logic, 68.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ClkPort'
+  Clock period: 2.066ns (frequency: 484.062MHz)
+  Total number of paths / destination ports: 253 / 22
+-------------------------------------------------------------------------
+Delay:               2.066ns (Levels of Logic = 23)
+  Source:            DIV_CLK_0 (FF)
+  Destination:       DIV_CLK_21 (FF)
+  Source Clock:      ClkPort rising
+  Destination Clock: ClkPort rising
+
+  Data Path: DIV_CLK_0 to DIV_CLK_21
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.447   0.579  DIV_CLK_0 (DIV_CLK_0)
+     INV:I->O              1   0.206   0.000  Mcount_DIV_CLK_lut<0>_INV_0 (Mcount_DIV_CLK_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcount_DIV_CLK_cy<0> (Mcount_DIV_CLK_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<1> (Mcount_DIV_CLK_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<2> (Mcount_DIV_CLK_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<3> (Mcount_DIV_CLK_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<4> (Mcount_DIV_CLK_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<5> (Mcount_DIV_CLK_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<6> (Mcount_DIV_CLK_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<7> (Mcount_DIV_CLK_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<8> (Mcount_DIV_CLK_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<9> (Mcount_DIV_CLK_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<10> (Mcount_DIV_CLK_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<11> (Mcount_DIV_CLK_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<12> (Mcount_DIV_CLK_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<13> (Mcount_DIV_CLK_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<14> (Mcount_DIV_CLK_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<15> (Mcount_DIV_CLK_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<16> (Mcount_DIV_CLK_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<17> (Mcount_DIV_CLK_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<18> (Mcount_DIV_CLK_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<19> (Mcount_DIV_CLK_cy<19>)
+     MUXCY:CI->O           0   0.019   0.000  Mcount_DIV_CLK_cy<20> (Mcount_DIV_CLK_cy<20>)
+     XORCY:CI->O           1   0.180   0.000  Mcount_DIV_CLK_xor<21> (Result<21>)
+     FDC:D                     0.102          DIV_CLK_21
+    ----------------------------------------
+    Total                      2.066ns (1.487ns logic, 0.579ns route)
+                                       (72.0% logic, 28.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DIV_CLK_21'
+  Clock period: 8.834ns (frequency: 113.197MHz)
+  Total number of paths / destination ports: 440083 / 653
+-------------------------------------------------------------------------
+Delay:               8.834ns (Levels of Logic = 7)
+  Source:            Invaders/alien2X_4 (FF)
+  Destination:       Invaders/alien4X_9 (FF)
+  Source Clock:      DIV_CLK_21 rising
+  Destination Clock: DIV_CLK_21 rising
+
+  Data Path: Invaders/alien2X_4 to Invaders/alien4X_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            16   0.447   1.233  Invaders/alien2X_4 (Invaders/alien2X_4)
+     LUT6:I3->O            4   0.205   0.931  Madd_n0340_xor<7>11 (n0340<7>)
+     LUT4:I0->O            0   0.203   0.000  Invaders/Mcompar_GND_4_o_BUS_0045_LessThan_223_o_lutdi3 (Invaders/Mcompar_GND_4_o_BUS_0045_LessThan_223_o_lutdi3)
+     MUXCY:DI->O           1   0.339   0.580  Invaders/Mcompar_GND_4_o_BUS_0045_LessThan_223_o_cy<3> (Invaders/Mcompar_GND_4_o_BUS_0045_LessThan_223_o_cy<3>)
+     LUT6:I5->O           15   0.205   1.086  Invaders/Mcompar_GND_4_o_BUS_0045_LessThan_223_o_cy<4> (Invaders/GND_4_o_BUS_0045_LessThan_223_o)
+     LUT2:I0->O            9   0.203   0.934  Invaders/GND_4_o_GND_4_o_AND_10_o1 (Invaders/GND_4_o_GND_4_o_AND_10_o)
+     LUT6:I4->O           11   0.203   0.883  Invaders/Mmux_GND_4_o_GND_4_o_mux_456_OUT1411 (Invaders/Mmux_GND_4_o_GND_4_o_mux_456_OUT141)
+     LUT4:I3->O           10   0.205   0.856  Invaders/_n1765_inv1 (Invaders/_n1765_inv)
+     FDSE:CE                   0.322          Invaders/alien4X_0
+    ----------------------------------------
+    Total                      8.834ns (2.332ns logic, 6.502ns route)
+                                       (26.4% logic, 73.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ClkPort'
+  Total number of paths / destination ports: 22 / 22
+-------------------------------------------------------------------------
+Offset:              4.346ns (Levels of Logic = 2)
+  Source:            Sw0 (PAD)
+  Destination:       DIV_CLK_0 (FF)
+  Destination Clock: ClkPort rising
+
+  Data Path: Sw0 to DIV_CLK_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  Sw0_IBUF (Sw0_IBUF)
+     BUF:I->O             50   0.568   1.547  BUF2 (LD4_OBUF)
+     FDC:CLR                   0.430          DIV_CLK_0
+    ----------------------------------------
+    Total                      4.346ns (2.220ns logic, 2.126ns route)
+                                       (51.1% logic, 48.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DIV_CLK_21'
+  Total number of paths / destination ports: 332 / 289
+-------------------------------------------------------------------------
+Offset:              8.200ns (Levels of Logic = 5)
+  Source:            Sw0 (PAD)
+  Destination:       Invaders/projectileY_8 (FF)
+  Destination Clock: DIV_CLK_21 rising
+
+  Data Path: Sw0 to Invaders/projectileY_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  Sw0_IBUF (Sw0_IBUF)
+     BUF:I->O             50   0.568   1.548  BUF2 (LD4_OBUF)
+     LUT5:I4->O            3   0.205   0.995  Invaders/reset_gameOver_OR_48_o3 (Invaders/reset_gameOver_OR_48_o3)
+     LUT5:I0->O           57   0.203   1.594  Invaders/reset_gameOver_OR_48_o6_2 (Invaders/reset_gameOver_OR_48_o6_1)
+     LUT3:I2->O            3   0.205   0.650  Invaders/Reset_OR_DriverANDClockEnable101 (Invaders/Reset_OR_DriverANDClockEnable10)
+     FDRE:R                    0.430          Invaders/projectileY_8
+    ----------------------------------------
+    Total                      8.200ns (2.833ns logic, 5.367ns route)
+                                       (34.6% logic, 65.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DIV_CLK_1'
+  Total number of paths / destination ports: 21 / 21
+-------------------------------------------------------------------------
+Offset:              5.510ns (Levels of Logic = 3)
+  Source:            Sw0 (PAD)
+  Destination:       syncgen/CounterX_0 (FF)
+  Destination Clock: DIV_CLK_1 rising
+
+  Data Path: Sw0 to syncgen/CounterX_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  Sw0_IBUF (Sw0_IBUF)
+     BUF:I->O             50   0.568   1.652  BUF2 (LD4_OBUF)
+     LUT2:I0->O           10   0.203   0.856  syncgen/Mcount_CounterX_val1 (syncgen/Mcount_CounterX_val)
+     FDR:R                     0.430          syncgen/CounterX_0
+    ----------------------------------------
+    Total                      5.510ns (2.423ns logic, 3.087ns route)
+                                       (44.0% logic, 56.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_CLK_1'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.382ns (Levels of Logic = 2)
+  Source:            syncgen/vga_HS (FF)
+  Destination:       vga_h_sync (PAD)
+  Source Clock:      DIV_CLK_1 rising
+
+  Data Path: syncgen/vga_HS to vga_h_sync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.579  syncgen/vga_HS (syncgen/vga_HS)
+     INV:I->O              1   0.206   0.579  syncgen/vga_h_sync1_INV_0 (vga_h_sync_OBUF)
+     OBUF:I->O                 2.571          vga_h_sync_OBUF (vga_h_sync)
+    ----------------------------------------
+    Total                      4.382ns (3.224ns logic, 1.158ns route)
+                                       (73.6% logic, 26.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ClkPort'
+  Total number of paths / destination ports: 22 / 11
+-------------------------------------------------------------------------
+Offset:              5.073ns (Levels of Logic = 2)
+  Source:            DIV_CLK_18 (FF)
+  Destination:       Cc (PAD)
+  Source Clock:      ClkPort rising
+
+  Data Path: DIV_CLK_18 to Cc
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.447   1.273  DIV_CLK_18 (DIV_CLK_18)
+     LUT6:I0->O            1   0.203   0.579  Mram_SSD_CATHODES41 (Cc_OBUF)
+     OBUF:I->O                 2.571          Cc_OBUF (Cc)
+    ----------------------------------------
+    Total                      5.073ns (3.221ns logic, 1.852ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_CLK_21'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              5.073ns (Levels of Logic = 2)
+  Source:            Invaders/score_0 (FF)
+  Destination:       Ca (PAD)
+  Source Clock:      DIV_CLK_21 rising
+
+  Data Path: Invaders/score_0 to Ca
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             12   0.447   1.273  Invaders/score_0 (Invaders/score_0)
+     LUT6:I0->O            1   0.203   0.579  Mram_SSD_CATHODES21 (Ce_OBUF)
+     OBUF:I->O                 2.571          Ce_OBUF (Ce)
+    ----------------------------------------
+    Total                      5.073ns (3.221ns logic, 1.852ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               6.487ns (Levels of Logic = 3)
+  Source:            Sw0 (PAD)
+  Destination:       LD4 (PAD)
+
+  Data Path: Sw0 to LD4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  Sw0_IBUF (Sw0_IBUF)
+     BUF:I->O             50   0.568   1.547  BUF2 (LD4_OBUF)
+     OBUF:I->O                 2.571          LD4_OBUF (LD4)
+    ----------------------------------------
+    Total                      6.487ns (4.361ns logic, 2.126ns route)
+                                       (67.2% logic, 32.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock ClkPort
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ClkPort        |    2.066|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DIV_CLK_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIV_CLK_1      |    7.260|         |         |         |
+DIV_CLK_21     |    9.124|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DIV_CLK_21
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIV_CLK_21     |    8.834|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.00 secs
+ 
+--> 
+
+Total memory usage is 351364 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  114 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Donovan\Downloads\VGA manual\vga_demo\vga_demo.ncd
+OUTFILE=C:\Users\Donovan\Downloads\VGA manual\vga_demo\vga_demo.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Donovan\Downloads\VGA manual\vga_demo
+LICENSE=WebPack
+USER_INFO=211444282_0_0_312

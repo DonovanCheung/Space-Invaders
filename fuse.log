@@ -1,0 +1,20 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Donovan/Downloads/VGA manual/vga_demo/hvsync_tb_isim_beh.exe -prj C:/Users/Donovan/Downloads/VGA manual/vga_demo/hvsync_tb_beh.prj work.hvsync_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Donovan/Downloads/VGA manual/vga_demo/hvsync_generator.v" into library work
+Analyzing Verilog file "C:/Users/Donovan/Downloads/VGA manual/vga_demo/hvsync_generator_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/Donovan/Downloads/VGA manual/vga_demo/hvsync_generator_tb.v" Line 32: Size mismatch in connection of port <CounterY>. Formal port size is 10-bit while actual signal size is 9-bit.
+Completed static elaboration
+Compiling module hvsync_generator
+Compiling module hvsync_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/Donovan/Downloads/VGA manual/vga_demo/hvsync_tb_isim_beh.exe
+Fuse Memory Usage: 27612 KB
+Fuse CPU Usage: 358 ms
